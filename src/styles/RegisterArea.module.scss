@@ -1,0 +1,45 @@
+.reristearea {
+  background: #fef2f2;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(196, 196, 196, 0.2);
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 480px;
+    height: 680px;
+
+    input {
+      margin-bottom: 32px;
+      background: whitesmoke;
+      border: none;
+      height: 40px;
+      width: 240px;
+      border-radius: 2px;
+      padding-left: 16px;
+      font-size: 16px;
+    }
+
+    button {
+      height: 40px;
+      width: 240px;
+      border: none;
+      background: rgba(234, 179, 8, 0.8);
+      font-size: 16px;
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+
+    a {
+      color: peru;
+    }
+  }
+}

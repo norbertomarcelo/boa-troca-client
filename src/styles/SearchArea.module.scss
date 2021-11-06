@@ -1,0 +1,26 @@
+.searcharea {
+  background: #fef2f2;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    background: rgba(196, 196, 196, 0.2);
+    border: none;
+    height: 64px;
+    width: 400px;
+    border-radius: 2px 0 0 2px;
+    padding-left: 16px;
+  }
+
+  button {
+    background: rgba(196, 196, 196, 0.2);
+    border: none;
+    height: 64px;
+    width: 64px;
+    border-radius: 0 2px 2px 0;
+    padding: 10px;
+    color: gray;
+  }
+}
