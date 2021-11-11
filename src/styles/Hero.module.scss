@@ -1,41 +1,85 @@
 .hero {
-  background: #fef2f2;
-  padding: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  height: 65vh;
+  width: 90vw;
+  max-width: 1080px;
+  margin: auto;
 
   .main {
-    margin: 40px;
-    padding-right: 120px;
-    text-align: left;
+    color: var(--gray-800);
+    width: 50%;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
 
     form {
       display: inline-flex;
+      color: (--gray-600);
 
       input {
-        background: rgba(196, 196, 196, 0.2);
+        background: var(--gray-200);
         border: none;
-        height: 32px;
-        width: 240px;
+        height: 2rem;
+        width: 15rem;
         border-radius: 2px 0 0 2px;
-        padding-left: 16px;
+        padding-left: 1rem;
+        color: var(--gray-500);
       }
 
       button {
-        background: rgba(196, 196, 196, 0.2);
+        background: var(--gray-200);
         border: none;
-        height: 32px;
+        height: 2rem;
+        width: 2rem;
         border-radius: 0 2px 2px 0;
-        padding: 10px;
-        color: gray;
+        color: var(--gray-500);
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
 
-  img {
-    margin: 40px;
-    width: 600px;
-    height: 400px;
+  .image {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .main {
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    flex-direction: column-reverse;
+
+    .main {
+      height: 50%;
+      text-align: center;
+
+      width: 90vw;
+      max-width: 1080px;
+
+      p {
+        display: none;
+      }
+    }
+
+    .image {
+      height: 50%;
+    }
   }
 }

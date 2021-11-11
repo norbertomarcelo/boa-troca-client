@@ -1,5 +1,3 @@
-import { CgSearch } from 'react-icons/cg';
-
 import Header from '../components/Header';
 import AdArea from '../components/AdArea';
 import Footer from '../components/Footer';

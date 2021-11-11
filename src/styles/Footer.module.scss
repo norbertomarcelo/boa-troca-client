@@ -1,12 +1,30 @@
 .footer {
-  background: #fef2f2;
-  padding: 16px;
+  border-top: 1px solid var(--gray-300);
+  height: 10vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-top: 1px solid lightgrey;
+  justify-content: left;
+
+  .container {
+    width: 90vw;
+    max-width: 1080px;
+    margin: auto;
+  }
 
   .copyright {
-    margin: 40px;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 4rem;
+    height: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 40rem;
   }
 }

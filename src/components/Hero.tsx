@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '../styles/Hero.module.scss';
 import { CgSearch } from 'react-icons/cg';
 
@@ -5,7 +6,7 @@ export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.main}>
-        <h2>Trocas e doações sem preocupações!</h2>
+        <h1>Trocas e doações sem preocupações!</h1>
         <p>
           Para aquelas compras feitas por impulso, compras esporádicas ou até
           aquelas que perderam o interesse com o tempo.
@@ -21,7 +22,15 @@ export default function Hero() {
           </button>
         </form>
       </div>
-      <img src='/hero.png' alt='Imagem ilustrativa' />
+
+      <Image
+        className={styles.image}
+        src='/hero.png'
+        alt='Imagem ilustrativa'
+        width={738}
+        height={548}
+        quality='100'
+      />
     </div>
   );
 }

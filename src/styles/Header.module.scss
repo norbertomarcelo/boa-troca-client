@@ -1,32 +1,59 @@
-.header {
-  background: #fef2f2;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 90vw;
+    max-width: 1080px;
+    margin: auto;
 
-  img {
-    height: 44px;
-    margin-left: 40px;
+    .logo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .buttonDiv {
+      button {
+        margin-left: 4rem;
+        padding: 0.8rem 1rem;
+        border: none;
+        font-size: 1rem;
+        border-radius: 2px;
+      }
+
+      .signInButton {
+        background: var(--red-50);
+      }
+
+      .signUpButton {
+        background: var(--wellow-400);
+
+        &:hover {
+          background: var(--wellow-300);
+        }
+      }
+    }
   }
+}
 
-  .buttonDiv {
-    margin-right: 40px;
+@media (max-width: 768px) {
+  header {
+    .container {
+      .buttonDiv {
+        .signUpButton {
+          display: none;
+        }
 
-    button {
-      margin-left: 40px;
-      padding: 12px 16px;
-      border: none;
-      font-size: 16px;
-      border-radius: 2px;
-    }
+        .signInButton {
+          background: var(--wellow-400);
 
-    .signInButton {
-      background: #fef2f2;
-    }
-
-    .signUpButton {
-      background: rgba(234, 179, 8, 0.8);
+          &:hover {
+            background: var(--wellow-300);
+          }
+        }
+      }
     }
   }
 }

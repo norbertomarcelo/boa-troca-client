@@ -4,6 +4,7 @@ export default function AdArea() {
   return (
     <div className={styles.adarea}>
       <span>Descubra itens perto de você</span>
+
       <div className={styles.adlist}>
         <div className={styles.ad}>
           <span>Teste Produto</span>

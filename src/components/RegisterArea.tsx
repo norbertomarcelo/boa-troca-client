@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/RegisterArea.module.scss';
 
 export default function LogInArea() {
@@ -20,7 +21,8 @@ export default function LogInArea() {
 
         <button>Entrar</button>
         <p>
-          Ja tem uma conta? <a href='#'>Faca seu Log in</a>
+          Ja tem uma conta?
+          <Link href='/signIn'> Faca seu Log in</Link>
         </p>
       </form>
     </div>

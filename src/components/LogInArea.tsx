@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/LogInArea.module.scss';
 
 export default function LogInArea() {
@@ -9,9 +10,12 @@ export default function LogInArea() {
         <input type='email' placeholder='Email' />
 
         <input type='password' placeholder='Senha' />
+
         <button>Entrar</button>
+
         <p>
-          Nao tem uma conta? <a href='#'>Cadatre-se</a>
+          Nao tem uma conta?
+          <Link href='/signUp'> Cadatre-se</Link>
         </p>
       </form>
     </div>
